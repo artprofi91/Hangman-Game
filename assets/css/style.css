@@ -1,0 +1,81 @@
+@font-face { font-family: Simpsonfont ; src: url(../font/Simpsonfont.ttf);}
+}
+/* So padding and border no longer increase width. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+	background: url(../images/simpsons-background.jpg); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* Some default document settings. */
+body {
+	
+	color: #ffd90f;
+	line-height: 140%;
+	text-align: center;
+	height: 100%;
+	vertical-align: middle;
+	font-family: Simpsonfont;
+}
+
+header {
+    font-size: 40px;
+    margin: 3%;
+}
+/*DON'T SEE AUDIO FILE*/
+audio {
+    display: none;
+}
+/*CREATE 2 COL*/
+#simpsons-panel {
+	float: left;
+	width: 50%;
+
+}
+
+#hangman-panel {
+	float: right;
+	width: 49%;
+	border: solid #ffd90f;
+}
+
+
+
+#word-placeholder {
+	font-size: 30px;
+}
+
+
+/*LOCATE OUR FOOTER*/
+footer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 50px;
+}
+
+
+@media screen and (max-width: 990px) {
+#hangman-panel {
+	clear: both;
+	width: 100%;
+}
+
+#simpsons-panel {
+	width: 100%;
+
+}
+footer {
+position: relative;
+top:20px;
+}
+
+
+
