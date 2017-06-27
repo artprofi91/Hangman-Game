@@ -118,7 +118,7 @@ document.onkeyup = function(event) {
 
 // Simpsons word Array
 function createWord(wordArray) {
-    word = wordArray[Math.floor(Math.random()*wordArray.length)+1];
+    word = wordArray[Math.floor(Math.random()*wordArray.length)];
     // see our word in console
     console.log(word);
 
